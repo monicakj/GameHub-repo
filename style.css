@@ -1,0 +1,47 @@
+body {
+  background-color: white;
+  font-family: "Open Sans", "Verdana", sans-serif;
+}
+
+h1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #000000;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  color: #000;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.item {
+  background-color: #abd5ff;
+  max-width: 150px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.floated {
+  float: left;
+}
+
+.positioned-container {
+  position: relative;
+  top: 50px;
+}
+
+.positioned {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+section::after {
+  content: "";
+  clear: both;
+  display: table;
+}
