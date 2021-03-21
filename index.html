@@ -1,40 +1,124 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My first website</title>
-    <meta name="description" content="This is a page about all my favorite things">
+    <title>GameHub | Home</title>
+    <meta name="description" content="GameHub-homepage">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
     <link href="style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
-    <header>
+    <section class="header">
       <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <a href="index.html"><img src="images/GameHub_Logo.png"></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fas fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="games.html">GAMES</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a class="nav-icon" href="profile.html"><i class="fa fa-user fa-lg"></i></a></li>
+            <li><a class="nav-icon" href="favorites.html"><i class="fa fa-star fa-lg"></i></a></li>
+            <li><a class="nav-icon" href="shopping-bag.html"><i class="fa fa-shopping-bag fa-lg"></i></a></li>
+          </ul>
+        </div>
+        <i class="fas fa-bars" onclick="showMenu()"></i>
       </nav>
-    </header>
-    <main>
-      <h1>Welcome to my Website</h1>
-      <p>Lorem ipsum dolor sit amet</p>
-    </main>
+      <div class="text-box">
+        <h1>THE UNIVERSE OF GAMES</h1>
+        <p>A competitively priced website with a huge range of games.<br>For Gamers. By Gamers.</p>
+        <a href="#" class="hero-button1">BUY GAMES</a>
+        <a href="#" class="hero-button2">SELL GAMES</a>
+      </div>
+    </section>
+
+    <!---- SEARCH BAR ---->
     <section>
-      <div class="item floated">
-          <p>1. Lorem ipsum dolor sit amet</p>
+        <li class="search-icon">
+          <input type="search" placeholder="Search..">
+          <label class="icon">
+            <span class="fas fa-search"></span>
+          </label>
+        </li>
+      </ul>
+    </section>
+
+    <!---- TOP GAMES ---->
+    <section class="topgames">
+      <h1>TOP GAMES</h1>
+      <p>The Top 4 Most Popular Games Worldwide.</p>
+
+    <div class="row1">
+      <div class="topgames-list">
+        <h2>FORGE LEGEND</h2>
+        <img src="/images/assets/GameHub_covers10.jpg">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
       </div>
-      <div class="item floated">
-          <p>2. Lorem ipsum dolor sit amet</p>
+      <div class="topgames-list">
+        <h2>FURIOUS</2>
+        <img src="/images/assets/GameHub_covers4.jpg">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
       </div>
-      <div class="item floated">
-          <p>3. Lorem ipsum dolor sit amet</p>
+      <div class="topgames-list">
+        <h2>SPACE WAR</2>
+        <img src="/images/assets/GameHub_covers6.jpg">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
       </div>
-  </section>
-  <section class="positioned-container">
-    <p class="positioned">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec dapibus est. Suspendisse consectetur eu diam ac congue. Suspendisse dapibus sem vel nisl ornare, lacinia placerat mauris lacinia. Curabitur tempor ipsum in lobortis placerat. Donec feugiat purus nulla, in vehicula enim dictum nec. Morbi nec maximus eros. In quis ultrices lacus, vel rhoncus sem. Maecenas lorem enim, pellentesque nec massa a, finibus dapibus velit. Nulla facilisi.</p>
-  </section>
+      <div class="topgames-list">
+        <h2>ASSASSIN</h2>
+        <img src="/images/assets/GameHub_covers5.jpg">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+    </div>
+    </section>
+
+    <!---- NEW RELEASES ---->
+    <section class="newreleases">
+      <h1>NEW RELEASES</h1>
+      <p>New PC Games of 2021.</p>
+
+      <div class="row2">
+        <div class="newreleases-list">
+          <h2>BLACK</h2>
+          <img src="/images/assets/GameHub_covers3.jpg">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="newreleases-list">
+          <h2>BOXER</h2>
+          <img src="/images/assets/GameHub_covers8.jpg">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="newreleases-list">
+          <h2>RACING</h2>
+          <img src="/images/assets/GameHub_covers7.jpg">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="newreleases-list">
+          <h2>PING PONG</h2>
+          <img src="/images/assets/GameHub_covers.jpg">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+      </div>
+    </section>
+
+    <main>
+    </main>
     <footer>
     </footer>
+
+    <!---- JavaScript for Toggle Menu ---->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+
+    </script>
   </body>
 </html>

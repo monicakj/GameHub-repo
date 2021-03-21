@@ -1,47 +1,478 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+}
+
 body {
-  background-color: white;
-  font-family: "Open Sans", "Verdana", sans-serif;
+  background: linear-gradient(black, #0c1c45);
 }
 
-h1 {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: #000000;
-}
-
-nav li {
-  display: inline-block;
-}
-
-nav a {
-  color: #000;
-  text-decoration: none;
-  padding: 10px;
-}
-
-.item {
-  background-color: #abd5ff;
-  max-width: 150px;
-  padding: 10px;
-  margin: 10px;
-}
-
-.floated {
-  float: left;
-}
-
-.positioned-container {
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(/images/javier-martinez-hUD0PUczwJQ-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
   position: relative;
-  top: 50px;
+  margin-bottom: 20px;
 }
 
-.positioned {
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  width: 200px;
+  margin-top: 20px;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+  margin-top: -20px;
+  padding-left: 50px;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.nav-links ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-links ul li a:hover {
+  color: #0c1c45;
+}
+
+.nav-icon {
+  margin: auto;
+  display: inline-flex;
+}
+
+.text-box {
+  width: 90%;
+  color: white;
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
-section::after {
-  content: "";
-  clear: both;
-  display: table;
+.text-box h1 {
+  font-size: 50px;
+}
+
+.text-box p {
+  margin: 10px 0 40px;
+  font-size: 20px;
+  color: white;
+}
+
+.hero-button1 {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  padding: 12px 34px;
+  width: 100px;
+  margin-right: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  background: #0071e3;
+  position: relative;
+  cursor: pointer;
+}
+
+.hero-button2 {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  padding: 12px 34px;
+  width: 100px;
+  font-size: 15px;
+  font-weight: bold;
+  background: #0c1c45;
+  position: relative;
+  cursor: pointer;
+}
+
+.hero-button1:hover {
+  background: #fff;
+  color: #0071e3;
+  transition: 1s;
+}
+
+.hero-button2:hover {
+  background: #fff;
+  color: #0c1c45;
+  transition: 1s;
+}
+
+nav .fas {
+  display: none;
+}
+
+/*---- SEARCH CONTAINER ----*/
+
+.search-icon {
+  margin: auto;
+  height: 40px;
+  width: 1000px;
+  display: flex;
+  background: #2a2a2a;
+  border-radius: 5px;
+}
+
+.search-icon input {
+  height: 100%;
+  width: 1000px;
+  border: none;
+  outline: none;
+  padding: 0 10px;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 5px 0 0 5px;
+  background-color: #2a2a2a;
+}
+
+.search-icon .icon {
+  height: 100%;
+  width: 50px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.search-icon .icon:hover {
+  background: #0071e3;
+}
+
+.search-icon .icon span:hover {
+  color: #fff;
+}
+
+.search-icon .icon span {
+  color: #fff;
+  font-size: 20px;
+}
+
+/*---- TOP GAMES ----*/
+.topgames {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.topgames p {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.topgames h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.topgames h2 {
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+  margin: 0px 0px;
+  color: #fff;
+}
+
+.row1 p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+
+.row1 {
+  margin-top: 0px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.topgames-list {
+  flex-basis: 30%;
+  background-color: transparent;
+  border-radius: 0px;
+  padding: 20px 20px;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+.topgames-list img {
+  width: 100%;
+}
+
+/*---- NEW RELEASES ----*/
+.newreleases {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.newreleases p {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.newreleases h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.newreleases h2 {
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+  margin: 0px 0;
+  color: #fff;
+}
+
+.row2 p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+
+.row2 {
+  margin-top: 0px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.newreleases-list {
+  flex-basis: 30%;
+  background-color: transparent;
+  border-radius: 0px;
+  padding: 20px 20px;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+.newreleases-list img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .nav-links ul li {
+    display: block;
+    padding: 0 0 20px 0;
+  }
+  .nav-links {
+    position: absolute;
+    background-color: #000;
+    height: 94vh;
+    width: 110px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 1;
+    transition: 1s;
+    padding: 30px;
+  }
+  nav .fas {
+    display: block;
+    color: #fff;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .nav-links ul {
+    padding: 20px;
+  }
+  nav img {
+    width: 150px;
+  }
+  .hero-button1 {
+    padding: 10px;
+  }
+  .hero-button2 {
+    padding: 10px;
+  }
+  .text-box h1 {
+    font-size: 40px;
+  }
+  .text-box p {
+    font-size: 20px;
+  }
+  .row1 {
+    flex-direction: column;
+  }
+  .row1 p {
+    font-size: 20px;
+  }
+  .row2 {
+    flex-direction: column;
+  }
+  .row2 p {
+    font-size: 15px;
+  }
+  .topgames h1 {
+    font-size: 40px;
+  }
+  .topgames-list h2 {
+    font-size: 32px;
+  }
+  .topgames p {
+    font-size: 20px;
+  }
+  .topgames-list p {
+    font-size: 20px;
+  }
+  .topgames-list img {
+    width: 70%;
+  }
+  .newreleases h1 {
+    font-size: 40px;
+  }
+  .newreleases-list h2 {
+    font-size: 32px;
+  }
+  .newreleases p {
+    font-size: 20px;
+  }
+  .newreleases-list p {
+    font-size: 20px;
+  }
+  .newreleases-list img {
+    width: 70%;
+  }
+  .search-icon {
+    width: 500px;
+  }
+  .search-icon input {
+    font-size: 15px;
+    width: 500px;
+  }
+  .search-icon .icon span {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .nav-links ul li {
+    display: block;
+    padding: 0 0 20px 0;
+  }
+  .nav-links {
+    position: absolute;
+    background-color: #000;
+    height: 94vh;
+    width: 110px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 1;
+    transition: 1s;
+    padding: 30px;
+  }
+  nav .fas {
+    display: block;
+    color: #fff;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .nav-links ul {
+    padding: 20px;
+  }
+  nav img {
+    width: 150px;
+  }
+  .hero-button1 {
+    padding: 10px;
+  }
+  .hero-button2 {
+    padding: 10px;
+  }
+  .text-box h1 {
+    font-size: 20px;
+  }
+  .text-box p {
+    font-size: 15px;
+  }
+  .row1 {
+    flex-direction: column;
+  }
+  .row1 p {
+    font-size: 15px;
+  }
+  .row2 {
+    flex-direction: column;
+  }
+  .row2 p {
+    font-size: 15px;
+  }
+  .topgames h1 {
+    font-size: 20px;
+  }
+  .topgames-list h2 {
+    font-size: 18px;
+  }
+  .topgames p {
+    font-size: 15px;
+  }
+  .topgames-list p {
+    font-size: 15px;
+  }
+  .topgames-list img {
+    width: 70%;
+  }
+  .newreleases h1 {
+    font-size: 20px;
+  }
+  .newreleases-list h2 {
+    font-size: 18px;
+  }
+  .newreleases p {
+    font-size: 15px;
+  }
+  .newreleases-list p {
+    font-size: 15px;
+  }
+  .newreleases-list img {
+    width: 70%;
+  }
+  .search-icon {
+    width: 300px;
+  }
+  .search-icon input {
+    font-size: 15px;
+    width: 300px;
+  }
+  .search-icon .icon span {
+    font-size: 18px;
+  }
 }
