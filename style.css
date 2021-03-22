@@ -62,7 +62,7 @@ nav img {
 }
 
 .text-box {
-  width: 90%;
+  width: 100%;
   color: white;
   position: absolute;
   top: 50%;
@@ -174,7 +174,7 @@ nav .fas {
   width: 80%;
   margin: auto;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
 .topgames p {
@@ -193,7 +193,6 @@ nav .fas {
   font-size: 25px;
   text-align: center;
   font-weight: bold;
-  margin: 0px 0px;
   color: #fff;
 }
 
@@ -206,8 +205,8 @@ nav .fas {
 }
 
 .row1 {
-  margin-top: 0px;
-  display: flex;
+  width: 100%;
+  display: inline-flex;
   justify-content: space-around;
   text-align: center;
 }
@@ -231,7 +230,8 @@ nav .fas {
   width: 80%;
   margin: auto;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 40px;
+  padding-bottom: 25px;
 }
 
 .newreleases p {
@@ -250,7 +250,6 @@ nav .fas {
   font-size: 25px;
   text-align: center;
   font-weight: bold;
-  margin: 0px 0;
   color: #fff;
 }
 
@@ -263,8 +262,8 @@ nav .fas {
 }
 
 .row2 {
-  margin-top: 0px;
-  display: flex;
+  width: 100%;
+  display: inline-flex;
   justify-content: space-around;
   text-align: center;
 }
@@ -291,8 +290,8 @@ nav .fas {
   .nav-links {
     position: absolute;
     background-color: #000;
-    height: 94vh;
-    width: 110px;
+    height: 96.5vh;
+    width: 140px;
     top: 0;
     right: -200px;
     text-align: left;
@@ -312,7 +311,7 @@ nav .fas {
     padding: 20px;
   }
   nav img {
-    width: 150px;
+    width: 200px;
   }
   .hero-button1 {
     padding: 10px;
@@ -327,22 +326,22 @@ nav .fas {
     font-size: 20px;
   }
   .row1 {
-    flex-direction: column;
+    flex-direction: row;
   }
   .row1 p {
     font-size: 20px;
   }
   .row2 {
-    flex-direction: column;
+    flex-direction: row;
   }
   .row2 p {
-    font-size: 15px;
+    font-size: 20px;
   }
   .topgames h1 {
     font-size: 40px;
   }
   .topgames-list h2 {
-    font-size: 32px;
+    font-size: 23px;
   }
   .topgames p {
     font-size: 20px;
@@ -351,13 +350,13 @@ nav .fas {
     font-size: 20px;
   }
   .topgames-list img {
-    width: 70%;
+    width: 100%;
   }
   .newreleases h1 {
     font-size: 40px;
   }
   .newreleases-list h2 {
-    font-size: 32px;
+    font-size: 23px;
   }
   .newreleases p {
     font-size: 20px;
@@ -366,21 +365,21 @@ nav .fas {
     font-size: 20px;
   }
   .newreleases-list img {
-    width: 70%;
+    width: 100%;
   }
   .search-icon {
-    width: 500px;
+    width: 450px;
   }
   .search-icon input {
     font-size: 15px;
-    width: 500px;
+    width: 450px;
   }
   .search-icon .icon span {
     font-size: 18px;
   }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
   .nav-links ul li {
     display: block;
     padding: 0 0 20px 0;
@@ -388,7 +387,7 @@ nav .fas {
   .nav-links {
     position: absolute;
     background-color: #000;
-    height: 94vh;
+    height: 95vh;
     width: 110px;
     top: 0;
     right: -200px;
@@ -418,7 +417,7 @@ nav .fas {
     padding: 10px;
   }
   .text-box h1 {
-    font-size: 20px;
+    font-size: 25px;
   }
   .text-box p {
     font-size: 15px;
@@ -436,10 +435,10 @@ nav .fas {
     font-size: 15px;
   }
   .topgames h1 {
-    font-size: 20px;
+    font-size: 25px;
   }
   .topgames-list h2 {
-    font-size: 18px;
+    font-size: 20px;
   }
   .topgames p {
     font-size: 15px;
@@ -451,10 +450,10 @@ nav .fas {
     width: 70%;
   }
   .newreleases h1 {
-    font-size: 20px;
+    font-size: 25px;
   }
   .newreleases-list h2 {
-    font-size: 18px;
+    font-size: 20px;
   }
   .newreleases p {
     font-size: 15px;
