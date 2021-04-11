@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>GameHub | Sign in to your account</title>
+  </head>
+
+  <body>
+    
+    <!-- HEADER -->
+    <section class="header">
+      <div class="logo">
+        <a href="index.html"><img src="images/GameHub_Logo.png"></a>
+      </div>
+      <div class="topnav" id="myTopnav">
+        <div class="topnav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="/contact.html">Contact</a>
+        <a href="games.html">Games</a>
+        <a href="profile.html">Profile</a>
+        <a class="nav2" href="favorites.html"><i class="fa fa-star fa-lg"></i></a>
+        <a class="nav3" href="shopping-cart.html"><i class="fas fa-shopping-cart fa-lg"></i></a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        </div>
+      </div>
+    </section>
+    
+    <!-- SIGN IN -->
+      <div class="signin-container">
+          <form action="#">
+              <div class="signin-row">
+                  <h2 style="text-align:center;">Login with Social Media or Manually</h2>
+                  <div class="vl">
+                      <span class="vl-innertext">or</span>
+                  </div>
+                  <div class="col">
+                      <a href="#" class="fb-btn">
+                          <i class="fa fa-facebook fa-fw"></i> Login with Facebook</a>
+                        <a href="#" class="twitter-btn">
+                            <i class="fa fa-twitter fa-fw"></i> Login with Twitter</a>
+                        <a href="#" class="google-btn">
+                            <i class="fa fa-google fa-fw"></i> Login with Google+</a>
+                  </div>
+                  <div class="col">
+                      <div class="hide-md-lg">
+                          <p>Or sign in manually:</p>
+                      </div>
+                      <input type="text" name="username" placeholder="Username" required>
+                      <input type="password" name="password" placeholder="Password" required>
+                      <input type="submit" value="LOGIN">
+                  </div>
+              </div>
+          </form>
+      </div>
+      <div class="bottom-container">
+          <div class="signin-row">
+                  <div class="signup-btn">
+                  <a href="sign-up.html" style="color:white" class="btn">Sign Up</a>
+                </div>
+                <div class="password-btn">
+                  <a href="forgot-password.html" style="color:white;" class="btn">Forgot password?</a>
+                </div>
+            </div>
+        </div>
+
+    <footer>
+
+    </footer>
+    
+    <!-- JAVASCRIPT -->
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+      </script>
+
+  </body>
+
+</html>
