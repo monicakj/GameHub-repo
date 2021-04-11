@@ -1250,6 +1250,25 @@ input[type="password"]:focus {
 }
 
 /*-- MEDIA --*/
+@media screen and (max-width: 1440px) {
+  .row1 p,
+  .row2 p,
+  .row3 p {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero h1 {
+    margin-top: 225px;
+  }
+  .hero p {
+    margin-top: 280px;
+  }
+  .hero-button {
+    top: 60%;
+    left: 440px;
+  }
+
 @media screen and (max-width: 1024px) {
   .topnav a:not(:first-child) {
     display: none;
@@ -1283,11 +1302,11 @@ input[type="password"]:focus {
   }
   .search-bar {
     display: inline-flex;
-    left: 100px;
-    width: 820px;
+    left: 90px;
+    width: 840px;
   }
   .search-bar input {
-    width: 820px;
+    width: 840px;
   }
   .search-icon:hover {
     background: none;
@@ -1296,7 +1315,7 @@ input[type="password"]:focus {
     color: #0071e3;
   }
   .hero-button {
-    top: 50%;
+    top: 58%;
     left: 320px;
   }
   .hero h1 {
@@ -1304,7 +1323,7 @@ input[type="password"]:focus {
     margin-left: 250px;
   }
   .hero p {
-    margin-top: 420px;
+    margin-top: 410px;
   }
   .column {
     flex-direction: column;
@@ -1318,6 +1337,15 @@ input[type="password"]:focus {
     margin-left: 500px;
     margin-top: auto;
   }
+  .row1 p,
+  .row2 p,
+  .row3 p {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .topgames-list h2, .newreleases-list h2, .bestsellers-list h2 {
+    font-size: 20px;
 }
 
 @media screen and (max-width: 900px) {
@@ -1345,15 +1373,15 @@ input[type="password"]:focus {
     z-index: 10;
   }
   .hero-button {
-    top: 450px;
+    top: 390px;
     left: 250px;
   }
   .hero h1 {
-    margin-top: 350px;
+    margin-top: 280px;
     margin-left: 180px;
   }
   .hero p {
-    margin-top: 400px;
+    margin-top: 340px;
   }
   .contact-search {
     margin: 0 auto 30px auto;
@@ -1386,11 +1414,11 @@ input[type="password"]:focus {
   }
   .search-bar {
     display: inline-flex;
-    left: 100px;
-    width: 750px;
+    left: 10px;
+    width: 830px;
   }
   .search-bar input {
-    width: 750px;
+    width: 830px;
   }
   .search-icon:hover {
     background: none;
@@ -1470,11 +1498,11 @@ input[type="password"]:focus {
   }
   .search-bar {
     display: inline-flex;
-    left: 80px;
-    width: 640px;
+    left: 20px;
+    width: 750px;
   }
   .search-bar input {
-    width: 640px;
+    width: 750px;
   }
   .search-icon:hover {
     background: none;
@@ -1483,15 +1511,16 @@ input[type="password"]:focus {
     color: #0071e3;
   }
   .hero-button {
-    top: 450px;
-    left: 180px;
+    top: 350px;
+    left: 200px;
   }
   .hero h1 {
-    margin-top: 350px;
-    margin-left: 120px;
+    margin-top: 250px;
+    margin-left: 130px;
   }
   .hero p {
-    margin-top: 400px;
+    margin-top: 300px;
+    left: 0;
   }
   .column {
     flex-direction: column;
@@ -1584,22 +1613,22 @@ input[type="password"]:focus {
   }
   .search-bar {
     display: inline-flex;
-    left: 70px;
-    width: 560px;
+    left: 10px;
+    width: 675px;
   }
   .search-bar input {
-    width: 560px;
+    width: 675px;
   }
   .hero-button {
-    top: 450px;
-    left: 180px;
+    top: 300px;
+    left: 155px;
   }
   .hero h1 {
-    margin-top: 350px;
-    margin-left: 120px;
+    margin-top: 200px;
+    margin-left: 90px;
   }
   .hero p {
-    margin-top: 400px;
+    margin-top: 250px;
   }
   .column {
     flex-direction: column;
@@ -1691,15 +1720,15 @@ input[type="password"]:focus {
     z-index: 10;
   }
   .hero-button {
-    top: 450px;
-    left: 130px;
+    top: 300px;
+    left: 10px;
   }
   .hero h1 {
-    margin-top: 350px;
-    margin-left: 68px;
+    margin-top: 200px;
+    margin-left: 40px;
   }
   .hero p {
-    margin-top: 400px;
+    margin-top: 250px;
   }
   .games-search {
     margin-left: 0;
@@ -1729,11 +1758,11 @@ input[type="password"]:focus {
   }
   .search-bar {
     display: inline-flex;
-    left: 60px;
-    width: 480px;
+    left: 10px;
+    width: 575px;
   }
   .search-bar input {
-    width: 480px;
+    width: 575px;
   }
   .col {
     width: 100%;
