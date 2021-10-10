@@ -20,9 +20,9 @@
       </div>
       <div class="topnav" id="myTopnav">
         <div class="topnav-links">
-        <a href="index.html" class="active">Home</a>
+        <a href="index.html">Home</a>
         <a href="about.html">About</a>
-        <a href="/contact.html">Contact</a>
+        <a href="/contact.html" class="active">Contact</a>
         <a href="games.html">Games</a>
         <a href="profile.html">Profile</a>
         <a class="nav2" href="favorites.html"><i class="fa fa-star fa-lg"></i></a>
@@ -33,32 +33,53 @@
     </section>
 
   <!-- SEARCH -->
-  <section class="contact-search">
+  <!-- <section class="contact-search">
     <li class="search-bar">
         <input type="search" placeholder="Search..">
         <label class="search-icon">
             <span class="fas fa-search"></span>
           </label>
       </li>
-  </section>
+  </section> -->
 
   <!-- CONTACT -->
-  <div class="container">
+  <div class="contact-container">
     <h2>CONTACT US</h2>
   <div class="row">
     <div class="column">
-      <form action="/action_page.php">
+
+      <form id="contactForm">
+        
+        <div>
         <label for="fname">First Name</label>
         <input type="text" id="fname" name="firstname" placeholder="Your name">
+        <div class="form-error" id="firstNameError">Please enter your name.</div>
+        </div>
+
+        <div>
         <label for="lname">Last Name</label>
         <input type="text" id="lname" name="lastname" placeholder="Your last name">
+        <div class="form-error" id="lastNameError">Pleaser enter your last name.</div>
+        </div> 
+
+        <div>
         <label for="email">Email</label>
         <input type="text" id="email" name="email" placeholder="email@example.com">
+        <div class="form-error" id="emailError">Please enter a valid email address.</div>
+        </div>
+
+        <div>
         <label for="subject">Message</label>
-        <textarea id="subject" name="subject" placeholder="You message" style="height:190px"></textarea>
-        <input type="submit" value="SEND MESSAGE">
+        <textarea id="subject" name="subject" placeholder="Your message" style="height:190px"></textarea>
+        <div class="form-error" id="subjectError">Your message must have a value with a minimum length of 10 characters.</div>
+        </div>
+
+        <input type="submit" id="button" value="SEND MESSAGE">
+
       </form>
     </div>
+
+    <!-- CONTACT COMPANY -->
     <br>
     <div class="contact-company">
         <h3>Company Name</h3>
@@ -81,6 +102,8 @@
       }
     }
     </script>
+
+    <script src="/js/contact.js"></script>
   
     <footer>
         

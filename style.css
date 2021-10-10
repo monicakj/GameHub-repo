@@ -47,7 +47,7 @@ p {
   position: relative;
   color: white;
   text-align: center;
-  padding: 0px 10px;
+  padding: 5px;
   margin: 20px 0 20px 25px;
   text-decoration: none;
   font-size: 18px;
@@ -153,13 +153,13 @@ img {
 .hero h1 {
   position: absolute;
   color: white;
-  width: auto;
-  margin: 200px 0 0 30%;
+  width: 100%;
+  margin: 200px auto;
 }
 
 .hero p {
   position: absolute;
-  margin: 250px 0 25px;
+  margin: 260px auto;
   width: 100%;
   color: white;
   text-align: center;
@@ -169,12 +169,12 @@ img {
 .hero-button {
   display: inline-block;
   position: absolute;
-  left: 35%;
-  top: 55%;
+  top: 330px;
   cursor: pointer;
   border-radius: 5px;
   font-weight: bold;
-  margin-top: 10px;
+  margin: 0 auto;
+  left: 35%;
 }
 
 .hero-button1 {
@@ -215,10 +215,9 @@ img {
 /*-- TOP-GAMES --*/
 .games-search {
   position: relative;
-  margin-left: 22%;
-  margin-right: auto;
-  padding: 25px;
-  justify-content: center;
+  display: flex;
+  margin: 25px auto;
+  width: auto;
 }
 
 .topgames {
@@ -446,20 +445,20 @@ input[type="submit"]:hover {
   border: 2px solid #0c1c45;
 }
 
-.container {
+.contact-container {
   width: 80%;
-  height: 800px;
+  height: auto;
   border-radius: 20px;
   background-color: #003973;
   padding: 35px;
   color: white;
   font-size: 18px;
   position: relative;
-  margin: 0 auto 50px auto;
+  margin: 50px auto 50px auto;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-.container h2 {
+.contact-container h2 {
   margin-left: 120px;
   color: white;
 }
@@ -482,6 +481,14 @@ input[type="submit"]:hover {
   content: "";
   display: table;
   clear: both;
+}
+
+.form-error {
+  display: none;
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 2px;
+  margin-bottom: 20px;
 }
 
 /*-- PROFILE --*/
@@ -568,13 +575,13 @@ input[type="submit"]:hover {
 }
 
 /*-- SHOPPING --*/
-.shopping-search {
+/* .shopping-search {
   position: relative;
   margin-left: 22%;
   margin-right: auto;
   padding: 25px 0 25px 0;
   justify-content: center;
-}
+} */
 
 .shopping-title h2 {
   margin: 50px 0 0 130px;
@@ -749,7 +756,7 @@ input[type="submit"]:hover {
 
 .payment-title h2 {
   color: white;
-  margin: 0px 0 25px 50px;
+  margin: 50px 0 50px 50px;
 }
 
 .payment-row {
@@ -859,11 +866,11 @@ span.price {
 }
 
 /*-- ORDER-SUCCESS --*/
-.success-search {
+/* .success-search {
   position: relative;
   padding: 25px 0 25px 0;
   margin: 0 auto 30px 22%;
-}
+} */
 
 .success-title h2 {
   margin: 50px 0 0 130px;
@@ -884,47 +891,58 @@ span.price {
 
 .purchase-title {
   position: absolute;
-  margin-left: 150px;
-  top: 480px;
+  margin-left: 50px;
+  top: 50px;
   color: white;
   letter-spacing: 1px;
 }
 
-.order-text {
+/* .purchase-title p {
   position: absolute;
-  margin-left: 150px;
-  top: 530px;
+  margin-left: 50px;
+  top: 50px;
   color: white;
   letter-spacing: 1px;
-}
+} */
 
 .order-information-title {
   color: white;
   position: absolute;
-  top: 725px;
-  margin-left: 150px;
+  top: 230px;
+  margin-left: 50px;
   letter-spacing: 1px;
 }
 
-.order-details p {
+.order-information {
+  display: inline-flex;
   position: absolute;
-  top: 780px;
-  margin-left: 150px;
+  margin-left: 50px;
+  margin-top: 230px;
+}
+
+.order-information p {
+  padding: 0 70px 0 0;
+}
+
+/* .order-details p {
+  position: absolute;
+  top: 250px;
+  margin-left: 50px;
   letter-spacing: 1px;
   color: white;
 }
 
 .billing-address p {
   position: absolute;
-  top: 780px;
+  top: 250px;
   margin-left: 420px;
   letter-spacing: 1px;
   color: white;
-}
+} */
 
-.shipping-method p {
+/* .shipping-method p {
   position: absolute;
-  top: 780px;
+  top: 250px;
   margin-left: 690px;
   letter-spacing: 1px;
   color: white;
@@ -932,18 +950,17 @@ span.price {
 
 .payment-method p {
   position: absolute;
-  top: 780px;
+  top: 250px;
   margin-left: 960px;
   letter-spacing: 1px;
   color: white;
-}
+} */
 
-.line {
+hr {
   width: 76.5%;
   position: absolute;
-  top: 670px;
-  margin-left: 150px;
-  margin-right: auto;
+  top: 200px;
+  margin-left: 50px;
   opacity: 0.6;
   border: 1px solid lightgrey;
 }
@@ -1230,7 +1247,7 @@ input[type="password"]:focus {
   width: 300px;
   height: 60px;
   margin-left: 850px;
-  top: 365px;
+  top: 0px;
   background-color: #0071e3;
   color: white;
   text-decoration: none;
@@ -1240,7 +1257,7 @@ input[type="password"]:focus {
   font-weight: bold;
   cursor: pointer;
   border-radius: 10px;
-  position: absolute;
+  position: relative;
   text-align: center;
 }
 
@@ -1250,26 +1267,27 @@ input[type="password"]:focus {
 }
 
 /*-- MEDIA --*/
-@media screen and (max-width: 1440px) {
+@media screen and (width: 1440px) {
   .row1 p,
   .row2 p,
   .row3 p {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
   .hero h1 {
-    margin-top: 225px;
+    margin: 15% auto;
   }
   .hero p {
-    margin-top: 280px;
+    margin-top: 250px;
   }
   .hero-button {
-    top: 60%;
+    top: 65%;
     left: 440px;
   }
+}
 
-@media screen and (max-width: 1024px) {
+@media screen and (width: 1024px) {
   .topnav a:not(:first-child) {
     display: none;
   }
@@ -1299,14 +1317,14 @@ input[type="password"]:focus {
   .games-search {
     margin-left: 0;
     margin-right: 0;
+    width: auto;
   }
   .search-bar {
     display: inline-flex;
-    left: 90px;
-    width: 840px;
+    width: 70%;
   }
   .search-bar input {
-    width: 840px;
+    width: 100%;
   }
   .search-icon:hover {
     background: none;
@@ -1344,11 +1362,14 @@ input[type="password"]:focus {
     margin-left: auto;
     margin-right: auto;
   }
-  .topgames-list h2, .newreleases-list h2, .bestsellers-list h2 {
+  .topgames-list h2,
+  .newreleases-list h2,
+  .bestsellers-list h2 {
     font-size: 20px;
+  }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (width: 900px) {
   .topnav a:not(:first-child) {
     display: none;
   }
@@ -1373,15 +1394,13 @@ input[type="password"]:focus {
     z-index: 10;
   }
   .hero-button {
-    top: 390px;
-    left: 250px;
+    left: 0;
   }
   .hero h1 {
-    margin-top: 280px;
-    margin-left: 180px;
+    margin: 280px auto;
   }
   .hero p {
-    margin-top: 340px;
+    margin: 340px auto;
   }
   .contact-search {
     margin: 0 auto 30px auto;
@@ -1389,6 +1408,7 @@ input[type="password"]:focus {
   .games-search {
     margin-left: 0;
     margin-right: 0;
+    width: auto;
   }
   .row1,
   .row2,
@@ -1414,11 +1434,10 @@ input[type="password"]:focus {
   }
   .search-bar {
     display: inline-flex;
-    left: 10px;
-    width: 830px;
+    width: 70%;
   }
   .search-bar input {
-    width: 830px;
+    width: 100%;
   }
   .search-icon:hover {
     background: none;
@@ -1430,7 +1449,7 @@ input[type="password"]:focus {
     flex-direction: column;
     padding: 0;
   }
-  .container h2 {
+  .contact-container h2 {
     margin-left: 100px;
     margin-bottom: 25px;
   }
@@ -1473,6 +1492,7 @@ input[type="password"]:focus {
   .games-search {
     margin-left: 0;
     margin-right: 0;
+    width: auto;
   }
   .row1,
   .row2,
@@ -1498,11 +1518,10 @@ input[type="password"]:focus {
   }
   .search-bar {
     display: inline-flex;
-    left: 20px;
-    width: 750px;
+    width: 80%;
   }
   .search-bar input {
-    width: 750px;
+    width: 100%;
   }
   .search-icon:hover {
     background: none;
@@ -1511,25 +1530,25 @@ input[type="password"]:focus {
     color: #0071e3;
   }
   .hero-button {
-    top: 350px;
-    left: 200px;
+    top: 310px;
+    left: 26%;
   }
   .hero h1 {
-    margin-top: 250px;
-    margin-left: 130px;
+    margin: 200px auto;
+    text-align: center;
   }
   .hero p {
-    margin-top: 300px;
-    left: 0;
+    margin: 250px auto;
+    text-align: center;
   }
   .column {
     flex-direction: column;
     padding: 0;
   }
-  .container {
+  .contact-container {
     height: auto;
   }
-  .container h2 {
+  .contact-container h2 {
     margin-left: 180px;
     margin-bottom: 25px;
   }
@@ -1555,6 +1574,39 @@ input[type="password"]:focus {
   }
   .col-25 {
     margin-bottom: 20px;
+  }
+  .payment-container {
+    width: 90%;
+    margin: 0 auto 40px;
+  }
+  .success-title h2 {
+    margin-left: 35px;
+  }
+  .conshop-button {
+    display: none;
+  }
+  .success-container {
+    width: 90%;
+  }
+  .purchase-title {
+    margin-left: 0;
+  }
+  hr {
+    top: 250px;
+    width: 80%;
+    left: 0;
+  }
+  .order-information-title {
+    top: 280px;
+    left: 0;
+  }
+  .order-information {
+    top: 100px;
+    left: 0;
+    display: inline-table;
+  }
+  .order-information p {
+    padding-bottom: 10px;
   }
 }
 
@@ -1588,6 +1640,7 @@ input[type="password"]:focus {
   .games-search {
     margin-left: 0;
     margin-right: 0;
+    width: auto;
   }
   .row1,
   .row2,
@@ -1613,31 +1666,29 @@ input[type="password"]:focus {
   }
   .search-bar {
     display: inline-flex;
-    left: 10px;
-    width: 675px;
+    width: 80%;
   }
   .search-bar input {
-    width: 675px;
+    width: 100%;
   }
   .hero-button {
     top: 300px;
-    left: 155px;
+    left: 20%;
   }
   .hero h1 {
-    margin-top: 200px;
-    margin-left: 90px;
+    margin: 180px auto;
   }
   .hero p {
-    margin-top: 250px;
+    margin: 235px auto;
   }
   .column {
     flex-direction: column;
     padding: 0;
   }
-  .container {
+  .contact-container {
     height: auto;
   }
-  .container h2 {
+  .contact-container h2 {
     margin-left: 130px;
     margin-bottom: 25px;
   }
@@ -1657,6 +1708,39 @@ input[type="password"]:focus {
   }
   input[type="submit"] {
     width: 300px;
+  }
+  .payment-container {
+    width: 90%;
+    margin: 0 auto 40px;
+  }
+  .success-title h2 {
+    margin-left: 25px;
+  }
+  .conshop-button {
+    display: none;
+  }
+  .success-container {
+    width: 90%;
+  }
+  .purchase-title {
+    margin-left: 0;
+  }
+  hr {
+    top: 250px;
+    width: 80%;
+    left: 0;
+  }
+  .order-information-title {
+    top: 280px;
+    left: 0;
+  }
+  .order-information {
+    top: 100px;
+    left: 0;
+    display: inline-table;
+  }
+  .order-information p {
+    padding-bottom: 10px;
   }
 }
 
@@ -1689,11 +1773,12 @@ input[type="password"]:focus {
     width: 100%;
     margin-top: 0;
   }
-  .container {
+  .contact-container {
     height: auto;
   }
-  .container h2 {
-    margin-left: 100px;
+  .contact-container h2 {
+    margin: 0 auto;
+    text-align: center;
     margin-bottom: 25px;
   }
   .contact-company {
@@ -1708,10 +1793,10 @@ input[type="password"]:focus {
   input[type="text"],
   select,
   textarea {
-    width: 300px;
+    width: auto;
   }
   input[type="submit"] {
-    width: 300px;
+    width: auto;
   }
   .home-search {
     padding: 25px 0 25px 0;
@@ -1720,19 +1805,22 @@ input[type="password"]:focus {
     z-index: 10;
   }
   .hero-button {
-    top: 300px;
-    left: 10px;
+    top: 290px;
+    left: 50px;
   }
   .hero h1 {
-    margin-top: 200px;
-    margin-left: 40px;
+    margin: 180px auto;
+    font-size: 35px;
+    text-align: center;
   }
   .hero p {
-    margin-top: 250px;
+    margin: 230px auto;
+    text-align: center;
   }
   .games-search {
     margin-left: 0;
     margin-right: 0;
+    width: auto;
   }
   .row1,
   .row2,
@@ -1758,11 +1846,10 @@ input[type="password"]:focus {
   }
   .search-bar {
     display: inline-flex;
-    left: 10px;
-    width: 575px;
+    width: 80%;
   }
   .search-bar input {
-    width: 575px;
+    width: 100%;
   }
   .col {
     width: 100%;
@@ -1794,5 +1881,38 @@ input[type="password"]:focus {
   .shopping-search {
     margin-left: 0;
     margin-right: 0;
+  }
+  .payment-container {
+    width: 90%;
+    margin: 0 auto 40px;
+  }
+  .success-title h2 {
+    margin-left: 25px;
+  }
+  .conshop-button {
+    display: none;
+  }
+  .success-container {
+    width: 90%;
+  }
+  .purchase-title {
+    margin-left: 0;
+  }
+  hr {
+    top: 250px;
+    width: 80%;
+    left: 0;
+  }
+  .order-information-title {
+    top: 280px;
+    left: 0;
+  }
+  .order-information {
+    top: 100px;
+    left: 0;
+    display: inline-table;
+  }
+  .order-information p {
+    padding-bottom: 10px;
   }
 }

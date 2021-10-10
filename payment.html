@@ -20,7 +20,7 @@
       </div>
       <div class="topnav" id="myTopnav">
         <div class="topnav-links">
-        <a href="index.html" class="active">Home</a>
+        <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="/contact.html">Contact</a>
         <a href="games.html">Games</a>
@@ -33,14 +33,14 @@
     </section>
     
     <!-- SEARCH -->
-    <section class="payment-search">
+    <!-- <section class="payment-search">
       <li class="search-bar">
           <input type="search" placeholder="Search..">
           <label class="search-icon">
               <span class="fas fa-search"></span>
             </label>
         </li>
-    </section>
+    </section> -->
     
     <!-- PAYMENT -->
     <div class="payment-title">
@@ -50,28 +50,54 @@
     <div class="payment-row">
         <div class="col-75">
             <div class="payment-container">
-                <form action="/action_page.php">
+                <form>
                 
                     <div class="payment-row">
                         <div class="col-50">
                             <h3>Billing Address</h3>
+                            
+                            <!-- FULL NAME -->
+                            <div>
                             <label for="fname">Full Name</label>
-                            <input type="text" id="fname" name="firstname" placeholder="Ola Nordmann">
+                            <input type="text" id="fullName" name="firstname" placeholder="Ola Nordmann">
+                            <div class="form-error" id="fullNameError">Please enter your name.</div>
+                            </div>
+
+                            <!-- EMAIL -->
+                            <div>
                             <label for="email">Email</label>
                             <input type="text" id="email" name="email" placeholder="ola.nordmann@example.com">
+                            <div class="form-error" id="emailError">Please enter a valid email.</div>
+                            </div>
+
+                            <!-- ADDRESS -->
+                            <div>
                             <label for="adr">Address</label>
-                            <input type="text" id="adr" name="address" placeholder="Svingen 1">
+                            <input type="text" id="address" name="address" placeholder="Svingen 1">
+                            <div class="form-error" id="addressError">Please enter your address.</div>
+
+                            </div>
+
+                            <!-- CITY -->
+                            <div>
                             <label for="city">City</label>
                             <input type="text" id="city" name="city" placeholder="Oslo">
+                            <div class="form-error" id="cityError">Please enter your city.</div>
+                            </div>
                             
+                            <!-- STATE -->
                             <div class="payment-row">
                                 <div class="col-50">
                                     <label for="state">State</label>
                                     <input type="text" id="state" name="state" placeholder="Oslo">
+                                    <div class="form-error" id="stateError">Please enter your state.</div>
                                 </div>
+
+                                <!-- ZIP -->
                                 <div class="col-50">
                                     <label for="zip">Zip</label>
                                     <input type="text" id="zip" name="zip" placeholder="0794">
+                                    <div class="form-error" id="zipError">Please enter the ZIP-code of your state.</div>
                                 </div>
                             </div>
                         </div>
@@ -84,26 +110,50 @@
                                 <i class="fa fa-cc-amex" style="color:white;"></i>
                                 <i class="fa fa-cc-mastercard" style="color:red;"></i>
                             </div>
+
+                            <!-- CARD NAME -->
+                            <div>
                             <label for="cname">Name on Card</label>
-                            <input type="text" id="cname" name="cardname" placeholder="Ola Nordmann">
+                            <input type="text" id="cardName" name="cardname" placeholder="Ola Nordmann">
+                            <div class="form-error" id="cardNameError">Please enter your card name.</div>
+                            </div>
+                            
+                            <!-- CARD NUMBER -->
+                            <div>
                             <label for="ccnum">Card Number</label>
-                            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                            <input type="text" id="cardNumber" name="cardnumber" placeholder="1111-2222-3333-4444">
+                            <div class="form-error" id="cardNumberError">Your card number must have a value with a  length of 16 characters.</div>
+                            </div>
+                            
+                            <!-- EXPIRY MONTH -->
+                            <div>
                             <label for="expmonth">Expiry Month</label>
-                            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+                            <input type="text" id="expMonth" name="expmonth" placeholder="September">
+                            <div class="form-error" id="expMonthError">Please enter the expiry month of your payment card.</div>
+                            </div>
+
+                            <!-- EXPIRY YEAR -->
                             <div class="checkout-row">
                                 <div class="col-50">
                                     <label for="expyear">Expiry Year</label>
-                                    <input type="text" id="expyear" name="expyear" placeholder="2022">
+                                    <input type="text" id="expYear" name="expyear" placeholder="2022">
+                                    <div class="form-error" id="expYearError">Please enter the expiry year of your payment card.</div>
                                 </div>
 
+                                <!-- CVV -->
                                 <div class="col-50">
                                     <label for="cvv">CVV</label>
                                     <input type="text" id="cvv" name="cvv" placeholder="352">
+                                    <div class="form-error" id="cvvError">Please enter a valid CVV-code.</div>
+
                                 </div>
                             </div>
                         </div>
                     </div>
-                        <a href="order-success.html" class="checkout-button">CHECKOUT</a>
+
+                    <!-- CHECK-OUT BUTTON -->
+                    <a href="/order-success.html" input type="submit" class="checkout-button" value="CHECKOUT">CHECKOUT</a>
+
                 </form>
             </div>
         </div>
@@ -115,7 +165,6 @@
                 <p><a href="#">Product 2</a> <span class="price">$5</span></p>
                 <p><a href="#">Product 3</a> <span class="price">$8</span></p>
                 <p><a href="#">Product 4</a> <span class="price">$2</span></p>
-                <hr>
                 <p>Total <span class="price" style="color:white"><b>$30</b></span></p>
             </div>
         </div>
@@ -133,7 +182,9 @@
       }
     }
     </script>
-  
+    
+    <!-- <script src="/js/payment.js"></script> -->
+
     <footer>
         
     </footer>
