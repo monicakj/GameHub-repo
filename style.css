@@ -40,6 +40,8 @@ p {
   overflow: hidden;
   background-color: #0c1c45;
   width: 100%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .topnav-links a {
@@ -47,8 +49,7 @@ p {
   position: relative;
   color: white;
   text-align: center;
-  padding: 5px;
-  margin: 20px 0 20px 25px;
+  padding: 20px;
   text-decoration: none;
   font-size: 18px;
   text-transform: uppercase;
@@ -492,9 +493,9 @@ input[type="submit"]:hover {
 }
 
 /*-- PROFILE --*/
-.signout {
+/* .signout {
   background: white;
-}
+} */
 
 .signout:hover {
   background: #0071e3;
@@ -1463,6 +1464,9 @@ input[type="password"]:focus {
 }
 
 @media screen and (max-width: 800px) {
+  .topnav a {
+    float: left;
+  }
   .topnav a:not(:first-child) {
     display: none;
   }
@@ -1608,9 +1612,15 @@ input[type="password"]:focus {
   .order-information p {
     padding-bottom: 10px;
   }
+  .game-row {
+    padding: 10px 0 30px;
+  }
 }
 
 @media screen and (max-width: 700px) {
+  .topnav a {
+    float: left;
+  }
   .topnav a:not(:first-child) {
     display: none;
   }
@@ -1742,9 +1752,22 @@ input[type="password"]:focus {
   .order-information p {
     padding-bottom: 10px;
   }
+  .bio-text {
+    text-align: center;
+  }
+  .game-title {
+    text-align: center;
+  }
+  .game-row {
+    margin-left: 55px;
+    padding: 10px 10px 50px 0;
+  }
 }
 
 @media screen and (max-width: 600px) {
+  .topnav a {
+    float: left;
+  }
   .topnav a:not(:first-child) {
     display: none;
   }
@@ -1914,5 +1937,15 @@ input[type="password"]:focus {
   }
   .order-information p {
     padding-bottom: 10px;
+  }
+  .bio-text {
+    text-align: center;
+  }
+  .game-title {
+    text-align: center;
+  }
+  .game-row {
+    margin: 0 auto;
+    padding: 0 10px 30px;
   }
 }
