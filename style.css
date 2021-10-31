@@ -243,7 +243,7 @@ img {
 
 .add-to-cart {
   margin-top: 20px;
-  font-size: 20px;
+  font-size: 18px;
   width: 180px;
   height: 40px;
   background: #0071e3;
@@ -509,7 +509,7 @@ img {
 
 .details-cart {
   margin-top: 20px;
-  font-size: 20px;
+  font-size: 18px;
   width: 180px;
   height: 40px;
   background: #0071e3;
@@ -1388,18 +1388,6 @@ input[type="password"]:focus {
 }
 
 /*-- MEDIA --*/
-@media screen and (width: 2560px) {
-  .game-description {
-    left: 1000px;
-  }
-}
-
-@media screen and (width: 2000px) {
-  .game-description {
-    left: 1000px;
-  }
-}
-
 @media screen and (min-width: 1700px) {
   .game-description {
     left: 800px;
@@ -1768,6 +1756,9 @@ input[type="password"]:focus {
   }
   .short-description p {
     width: auto;
+  }
+  .game-container {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
