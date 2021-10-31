@@ -266,6 +266,10 @@ img {
   width: auto;
 }
 
+.game-price {
+  color: white;
+}
+
 /* .topgames {
   width: 90%;
   margin: auto;

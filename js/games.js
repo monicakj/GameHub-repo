@@ -27,8 +27,8 @@ function createHTML(games){
         <h2>${games.name}</h2>
         </a>
         
-        <div class="game-price>
-        ${games.price_html}
+        <div class="game-price">
+        <p>${games.price_html}</p>
         </div>
         
         <div class="cart-btn">
