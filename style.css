@@ -259,6 +259,12 @@ img {
   font-family: futura;
 }
 
+.add-to-cart:hover {
+  background-color: white;
+  color: black;
+  transition: 1s;
+}
+
 .games-search {
   position: relative;
   display: flex;
@@ -463,17 +469,16 @@ img {
   width: auto;
   max-width: 1000px;
   height: auto;
-  margin: 80px auto 0 auto;
+  margin: 80px auto 80px auto;
   background: transparent;
   padding: 1rem;
-  border: 0;
   display: inline-flexbox;
+  /* box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); */
 }
 
 .game-img img {
   display: inline-block;
   width: 40%;
-  margin-bottom: 80px;
 }
 
 .game-description {
@@ -514,11 +519,13 @@ img {
   cursor: pointer;
   font-family: futura;
   margin: 0;
+  border-radius: 0px;
 }
 
 .details-cart:hover {
   background-color: white;
   color: black;
+  transition: 1s;
 }
 
 /*-- CONTACT --*/
