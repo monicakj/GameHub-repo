@@ -1,6 +1,15 @@
 const url = 'https://www.mskj.one/wp-json/wc/store/products/';
 const gamesContainer = document.querySelector (".game-container");
 
+// GAME CATEGORY
+// const actionContainer = document.querySelector (".action");
+// const adventureContainer = document.querySelector (".adventure");
+// const adventureContainer = document.querySelector (".fighting");
+// const adventureContainer = document.querySelector (".racing");
+// const adventureContainer = document.querySelector (".role-playing");
+// const adventureContainer = document.querySelector (".sport");
+// const adventureContainer = document.querySelector (".strategy");
+
 async function getGames() {
     try {
         const response = await fetch(url);
