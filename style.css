@@ -213,7 +213,7 @@ img {
   transition: 1s;
 }
 
-/*-- TOP-GAMES --*/
+/*-- GAMES --*/
 .games-title h1 {
   margin: 50px 0 50px 0;
   color: white;
@@ -237,13 +237,14 @@ img {
   color: white;
 }
 
-.games h3 {
+.games h2 {
   margin-bottom: 10px;
 }
 
 .games img {
   width: 100%;
   display: inline-flex;
+  margin-bottom: 20px;
 }
 
 .add-to-cart {
@@ -256,10 +257,6 @@ img {
   border: none;
   cursor: pointer;
   font-family: futura;
-}
-
-.game-price p {
-  margin-top: 10px;
 }
 
 .games-search {
@@ -332,7 +329,7 @@ img {
 } */
 
 /*-- NEW RELEASES --*/
-.newreleases {
+/* .newreleases {
   width: 90%;
   margin: auto;
   text-align: center;
@@ -392,10 +389,10 @@ img {
   width: 100%;
   border-radius: 10px;
   margin-top: 10px;
-}
+} */
 
 /*-- BESTSELLERS --*/
-.bestsellers {
+/* .bestsellers {
   width: 90%;
   margin: auto;
   text-align: center;
@@ -455,24 +452,32 @@ img {
   width: 100%;
   border-radius: 10px;
   margin-top: 10px;
-}
+} */
 
 /* GAME DETAILS */
 .game-details {
-  width: 100%;
+  width: auto;
   max-width: 1000px;
-  height: 700px;
-  margin: 50px auto 50px auto;
-  background: white;
+  margin: 80px auto 0 auto;
+  background: transparent;
   padding: 1rem;
-  border: 1px solid black;
+  border: 0;
+}
+
+.game-details h1 {
+  color: white;
 }
 
 .game-details img {
-  display: block;
-  margin: 0 auto 50px;
-  width: 15%;
+  display: inline-block;
+  width: 35%;
 }
+
+/* .game-details p,
+.game-details h3 {
+  text-align: left;
+  color: black;
+} */
 
 /*-- CONTACT --*/
 .contact-search {

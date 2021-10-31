@@ -23,12 +23,12 @@ function createHTML(games){
         `
         <div class="games">
         <a href="/game-details.html?id=${games.id}">
-        <h3>${games.name}</h3>
+        <h2>${games.name}</h2>
         <img src="${games.images[0].src}" alt="${games.name}">
         </a>
         
         <div class="game-price>
-        <p>Price: ${games.price_html}</p>
+        ${games.price_html}
         </div>
         
         <div class="cart-btn">
