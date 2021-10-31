@@ -1374,6 +1374,12 @@ input[type="password"]:focus {
 }
 
 /*-- MEDIA --*/
+@media screen and (max-width: 2000px) {
+  .game-description {
+    left: 1000px;
+  }
+}
+
 @media screen and (width: 1440px) {
   .row1 p,
   .row2 p,
