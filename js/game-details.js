@@ -37,7 +37,7 @@ function createHtml(details) {
         </div>
 
         <div class="game-description">
-        <div class="game-title">
+        <div class="details-title">
         <h1>${details.name}<h1>
         </div>
         

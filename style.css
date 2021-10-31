@@ -466,6 +466,7 @@ img {
   background: transparent;
   padding: 1rem;
   border: 0;
+  display: inline-flexbox;
 }
 
 .game-img img {
@@ -480,7 +481,7 @@ img {
   position: absolute;
 }
 
-.game-title h1 {
+.details-title h1 {
   color: white;
 }
 
@@ -1391,10 +1392,13 @@ input[type="password"]:focus {
     top: 65%;
     left: 440px;
   }
+  .game-description {
+    left: 700px;
+  }
 }
 
 @media screen and (width: 1024px) {
-  .topnav a:not(:first-child) {
+  /* .topnav a:not(:first-child) {
     display: none;
   }
   .topnav a.icon {
@@ -1410,7 +1414,7 @@ input[type="password"]:focus {
     float: none;
     display: block;
     text-align: left;
-  }
+  } */
   .home-search {
     padding: 25px 0 25px 0;
     position: absolute;
@@ -1473,10 +1477,13 @@ input[type="password"]:focus {
   .bestsellers-list h2 {
     font-size: 20px;
   }
+  .game-description {
+    left: 500px;
+  }
 }
 
 @media screen and (width: 900px) {
-  .topnav a:not(:first-child) {
+  /* .topnav a:not(:first-child) {
     display: none;
   }
   .topnav a.icon {
@@ -1492,7 +1499,7 @@ input[type="password"]:focus {
     float: none;
     display: block;
     text-align: left;
-  }
+  } */
   .home-search {
     padding: 25px 0 25px 0;
     position: absolute;
@@ -1565,6 +1572,9 @@ input[type="password"]:focus {
   }
   .contact-company h3 {
     font-size: 20px;
+  }
+  .game-description {
+    left: 400px;
   }
 }
 
@@ -1719,6 +1729,13 @@ input[type="password"]:focus {
   }
   .game-row {
     padding: 10px 0 30px;
+  }
+  .game-description {
+    left: 350px;
+    top: 340px;
+  }
+  .short-description p {
+    width: auto;
   }
 }
 
@@ -2052,5 +2069,17 @@ input[type="password"]:focus {
   .game-row {
     margin: 0 auto;
     padding: 0 10px 30px;
+  }
+  .game-description {
+    left: 280px;
+  }
+  .game-description p {
+    font-size: 18px;
+  }
+  .details-title h1 {
+    font-size: 30px;
+  }
+  .short-description p {
+    width: auto;
   }
 }
