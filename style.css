@@ -516,6 +516,11 @@ img {
   margin: 0;
 }
 
+.details-cart:hover {
+  background-color: white;
+  color: black;
+}
+
 /*-- CONTACT --*/
 .contact-search {
   position: relative;
