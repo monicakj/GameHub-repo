@@ -1,4 +1,5 @@
 const detailsContainer = document.querySelector(".game-details");
+const gameDescription = document.querySelector(".game-description");
 
 const queryString = document.location.search;
 
@@ -29,13 +30,31 @@ async function fetchGame() {
 fetchGame();
 
 function createHtml(details) {
-    detailsContainer.innerHTML = `
+    detailsContainer.innerHTML = 
+        `
+        <div class="game-img">
+        <img src="${details.images[0].src}">
+        </div>
+
+        <div class="game-description">
         <div class="game-title">
         <h1>${details.name}<h1>
         </div>
+        
+        <div class="game-price">
+        <p>Price: ${details.price_html}</p>
+        </div>
 
-        <div class="game-img">
-        <img src="${details.images[0].src}">
+        <div class="game-category">
+        <p>Category: ${details.categories[0].name}</p>
+        </div>
+
+        <div class="short-description">
+        <p>${details.short_description}</p>
+
+        <a href="/shopping-cart.html">
+        <button class="details-cart">Add to cart</button>
+        </a>
         </div>
         `;
 }

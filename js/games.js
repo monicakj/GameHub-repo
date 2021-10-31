@@ -23,8 +23,8 @@ function createHTML(games){
         `
         <div class="games">
         <a href="/game-details.html?id=${games.id}">
-        <h2>${games.name}</h2>
         <img src="${games.images[0].src}" alt="${games.name}">
+        <h2>${games.name}</h2>
         </a>
         
         <div class="game-price>

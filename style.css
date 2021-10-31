@@ -238,13 +238,13 @@ img {
 }
 
 .games h2 {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .games img {
   width: 100%;
   display: inline-flex;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .add-to-cart {
@@ -464,20 +464,51 @@ img {
   border: 0;
 }
 
-.game-details h1 {
+.game-img img {
+  display: inline-block;
+  width: 40%;
+  margin-bottom: 80px;
+}
+
+.game-description {
+  left: 600px;
+  top: 400px;
+  position: absolute;
+}
+
+.game-title h1 {
   color: white;
 }
 
-.game-details img {
-  display: inline-block;
-  width: 35%;
+.short-description p {
+  color: white;
+  width: 500px;
+  margin-top: 20px;
+  background-color: transparent;
 }
 
-/* .game-details p,
-.game-details h3 {
-  text-align: left;
-  color: black;
-} */
+.game-price {
+  color: white;
+  margin-top: 10px;
+}
+
+.game-category {
+  color: white;
+  margin-top: 10px;
+}
+
+.details-cart {
+  margin-top: 20px;
+  font-size: 20px;
+  width: 150px;
+  height: 40px;
+  background: #0071e3;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-family: futura;
+  margin: 0;
+}
 
 /*-- CONTACT --*/
 .contact-search {
