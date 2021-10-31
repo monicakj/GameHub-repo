@@ -462,6 +462,7 @@ img {
 .game-details {
   width: auto;
   max-width: 1000px;
+  height: auto;
   margin: 80px auto 0 auto;
   background: transparent;
   padding: 1rem;
