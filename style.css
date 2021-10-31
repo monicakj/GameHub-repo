@@ -1388,9 +1388,15 @@ input[type="password"]:focus {
 }
 
 /*-- MEDIA --*/
-@media screen and (max-width: 2560px) {
+@media screen and (width: 2560px) {
   .game-description {
     left: 1250px;
+  }
+}
+
+@media screen and (width: 1700px) {
+  .game-description {
+    left: 820px;
   }
 }
 
@@ -1907,6 +1913,9 @@ input[type="password"]:focus {
     margin-left: 55px;
     padding: 10px 10px 50px 0;
   }
+  .short-description p {
+    width: 400px;
+  }
   .game-container {
     grid-template-columns: 1fr 1fr;
   }
@@ -2116,7 +2125,7 @@ input[type="password"]:focus {
   }
 }
 
-@media screen and (width: 425px) {
+@media screen and (max-width: 425px) {
   .game-details {
     height: 770px;
   }
