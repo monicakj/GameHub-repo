@@ -1388,9 +1388,9 @@ input[type="password"]:focus {
 }
 
 /*-- MEDIA --*/
-@media screen and (min-width: 1700px) {
+@media screen and (max-width: 2560px) {
   .game-description {
-    left: 800px;
+    left: 1250px;
   }
 }
 
@@ -2116,7 +2116,7 @@ input[type="password"]:focus {
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (width: 425px) {
   .game-details {
     height: 770px;
   }
