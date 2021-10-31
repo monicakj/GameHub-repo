@@ -1400,7 +1400,7 @@ input[type="password"]:focus {
   }
 }
 
-@media screen and (width: 1700px) {
+@media screen and (width: 1664px) {
   .game-description {
     left: 800px;
   }
