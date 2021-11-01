@@ -2142,6 +2142,12 @@ input[type="password"]:focus {
 }
 
 @media screen and (max-width: 425px) {
+  .game-container {
+    grid-template-columns: 1fr;
+  }
+  .games {
+    text-align: center;
+  }
   .game-details {
     height: 850px;
     max-width: none;
