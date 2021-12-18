@@ -1,0 +1,103 @@
+/*-- SHOPPING CART --*/
+.shopping-title h2 {
+  margin: 50px 0 0 10%;
+  color: white;
+}
+
+/* .conshop-button {
+  width: 300px;
+  height: 60px;
+  margin-left: 850px;
+  top: 365px;
+  background-color: #0071e3;
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 10px;
+  position: absolute;
+  text-align: center;
+}
+
+.conshop-button:hover {
+  background: #fff;
+  color: #0071e3;
+} */
+
+.shopping-container {
+  width: 80%;
+  height: 500px;
+  border-radius: 10px;
+  background-color: #003973;
+  padding: 50px;
+  color: white;
+  font-size: 18px;
+  position: relative;
+  margin: 30px auto 20px auto;
+}
+
+.flex-container {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  margin: 2em auto;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.flex-item {
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  /* text-align: center; */
+  margin: 10px;
+  flex: 1 1 auto;
+}
+
+.flex-item p {
+  font-size: 25px;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.flex-item a {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.flex-item a:hover {
+  color: #0071e3;
+}
+
+.payment-button {
+  display: block;
+  text-decoration: none;
+  color: #0c1c45;
+  background-color: white;
+  padding: 12px 34px;
+  width: 200px;
+  height: 60px;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 10px;
+  width: 80%;
+  position: relative;
+  text-align: center;
+  margin: 0 auto 50px auto;
+}
+
+.payment-button:hover {
+  background: #fff;
+  color: #0071e3;
+}

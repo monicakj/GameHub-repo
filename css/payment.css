@@ -1,0 +1,118 @@
+/*-- PAYMENT --*/
+.payment-search {
+  position: relative;
+  padding: 25px 0 25px 0;
+  margin: 0 auto 30px 22%;
+}
+
+.payment-title h1 {
+  color: white;
+  margin: 50px 0 50px 5%;
+  width: fit-content;
+}
+
+.payment-row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  margin-right: 50px;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.col-25,
+.col-50 h3 {
+  margin-bottom: 10px;
+}
+
+.payment-container {
+  background-color: #003973;
+  color: white;
+  padding: 15px 20px 15px 20px;
+  border-radius: 10px;
+  margin: 0 0 50px 5%;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+input[type="text"] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 50px;
+}
+
+.checkout-button {
+  display: block;
+  text-decoration: none;
+  color: white;
+  background-color: #0c1c45;
+  padding: 12px;
+  width: 100%;
+  height: 60px;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 10px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  margin: 20px auto 20px auto;
+}
+
+.checkout-button:hover {
+  background: #0071e3;
+  color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+a {
+  color: #0071e3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+  width: 100%;
+}
+
+span.price {
+  float: right;
+  color: white;
+  font-size: 18px;
+}

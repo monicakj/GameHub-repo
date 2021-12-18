@@ -1,0 +1,99 @@
+/*-- ORDER-SUCCESS --*/
+/* .success-search {
+  position: relative;
+  padding: 25px 0 25px 0;
+  margin: 0 auto 30px 22%;
+} */
+
+.success-title h2 {
+  margin: 50px 0 0 130px;
+  color: white;
+}
+
+.success-container {
+  width: 80%;
+  height: 500px;
+  border-radius: 10px;
+  background-color: #003973;
+  padding: 50px;
+  color: white;
+  font-size: 18px;
+  position: relative;
+  margin: 30px auto 50px auto;
+}
+
+.purchase-title {
+  position: absolute;
+  margin-left: 50px;
+  top: 50px;
+  color: white;
+  letter-spacing: 1px;
+}
+
+/* .purchase-title p {
+  position: absolute;
+  margin-left: 50px;
+  top: 50px;
+  color: white;
+  letter-spacing: 1px;
+} */
+
+.order-information-title {
+  color: white;
+  position: absolute;
+  top: 230px;
+  margin-left: 50px;
+  letter-spacing: 1px;
+}
+
+.order-information {
+  display: inline-flex;
+  position: absolute;
+  margin-left: 50px;
+  margin-top: 230px;
+}
+
+.order-information p {
+  padding: 0 70px 0 0;
+}
+
+/* .order-details p {
+  position: absolute;
+  top: 250px;
+  margin-left: 50px;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.billing-address p {
+  position: absolute;
+  top: 250px;
+  margin-left: 420px;
+  letter-spacing: 1px;
+  color: white;
+} */
+
+/* .shipping-method p {
+  position: absolute;
+  top: 250px;
+  margin-left: 690px;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.payment-method p {
+  position: absolute;
+  top: 250px;
+  margin-left: 960px;
+  letter-spacing: 1px;
+  color: white;
+} */
+
+hr {
+  width: 76.5%;
+  position: absolute;
+  top: 200px;
+  margin-left: 50px;
+  opacity: 0.6;
+  border: 1px solid lightgrey;
+}
