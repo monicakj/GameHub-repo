@@ -144,6 +144,31 @@ img {
   font-size: 20px;
 }
 
+/* LOADER */
+.fa-gamepad {
+  font-size: 50px;
+  color: white;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  margin: 50px auto;
+  animation: loader 0.7s infinite;
+}
+
+@keyframes loader {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-40px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
 /*-- MEDIA --*/
 @media screen and (width: 2560px) {
   .game-details {
