@@ -1,4 +1,4 @@
-const url = 'https://www.mskj.one/wp-json/wc/store/products/';
+const url = 'https://www.gamehub.mskj.one/wp-json/wc/store/products/';
 const gamesContainer = document.querySelector (".game-container");
 
 async function getGames() {
