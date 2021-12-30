@@ -9,8 +9,7 @@ const id = params.get("id");
 
 console.log(id);
 
-const url = 'https://www.gamehub.mskj.one/wp-json/wc/store/products/' + id;
-
+const url = 'https://gamehub.mskj.one/wp-json/wc/store/products/' + id;
 
 
 async function fetchGame() {
